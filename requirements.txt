@@ -29,6 +29,9 @@ markdownify==1.1.0
 pytest==8.4.0
 pytest-asyncio==1.0.0
 
+# MCP Server (FastMCP)
+fastmcp==3.4.2
+
 # Utilities
 rich==14.0.0
 pyyaml==6.0.2
