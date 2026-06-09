@@ -1,0 +1,34 @@
+# Agente Colaborador USJ/CGE — Dependências
+# TASK-013: Configurar Ambiente Python e Dependências
+
+# Core
+python-dotenv==1.1.0
+pydantic==2.11.4
+
+# RAG & LLM (TASK-008, TASK-015)
+langchain==0.3.25
+langchain-community==0.3.25
+langchain-openai==0.3.12
+openai==1.87.0
+
+# Vector DB (TASK-007)
+chromadb==1.0.7
+
+# Web Interface (TASK-009)
+streamlit==1.45.1
+
+# Data Collection (TASK-006)
+beautifulsoup4==4.13.4
+requests==2.32.3
+markdownify==1.1.0
+
+# WhatsApp integration (TASK-010)
+# wacli is installed separately via npm/go
+
+# Testing (TASK-016)
+pytest==8.4.0
+pytest-asyncio==1.0.0
+
+# Utilities
+rich==14.0.0
+pyyaml==6.0.2
