@@ -1,0 +1,22 @@
+# TASK-018: Deploy e Homologação do Agente USJ/CGE
+version: "3.8"
+
+services:
+  agente:
+    build: .
+    container_name: agente-usj-cge
+    ports:
+      - "8501:8501"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - OPENAI_MODEL=${OPENAI_MODEL:-gpt-4o-mini}
+      - CHROMA_PERSIST_DIR=/app/data/chromadb
+      - CHROMA_COLLECTION=usj_cge_knowledge
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

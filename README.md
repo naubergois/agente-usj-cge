@@ -1,6 +1,10 @@
 # 🤖 Agente Colaborador USJ/CGE — Robô Nordestino Chinês
 
 <p align="center">
+  <img src="assets/robo-nordestino-chines.png" alt="Robô Nordestino Chinês — Mascote do Agente USJ/CGE" width="200"/>
+</p>
+
+<p align="center">
   <img src="assets/logo-usj-oficial.svg" alt="USJ - Universidade São José de Macau" height="100"/>
   &nbsp;&nbsp;&nbsp;&nbsp;
   <img src="assets/logo-cge-oficial.png" alt="CGE - Controladoria e Ouvidoria Geral do Estado" height="80"/>
